@@ -2,7 +2,7 @@
 
 Selected TypeScript implementation excerpts and three small offline models addressing
 questions in the [ERC-8415 discussion](https://ethereum-magicians.org/t/erc-8415-asynchronous-register-projection-for-nfts/29634).
-The excerpts included here are readable without access to the wallet source repository.
+The selected excerpts are included in full below.
 The models illustrate specific boundaries; they are not a complete wallet, production
 integration, security audit, or evidence of a live deployment.
 
@@ -66,9 +66,8 @@ and [response, post 25](https://ethereum-magicians.org/t/erc-8415-asynchronous-r
 
 ## 4. Inspect commitment links and effective-time history
 
-- [New exact TypeScript excerpts](commitment-history.excerpts.md) from the Wallet
-  source snapshot `d4a20a140aaa0671ea2a8b1413180606e9f91ec7` show the pure
-  adjacent-entry check used by its history view.
+- [Selected TypeScript excerpts](commitment-history.excerpts.md) show the pure
+  adjacent-entry check used by the history view.
 - The helper compares `previousCommitment` with the preceding `recordCommitment`,
   checks consecutive versions and increasing effective times, and checks interval
   closure at the successor's effective time. It returns fault labels without
@@ -114,27 +113,17 @@ Retain applicable notices. Existing independent rights and valid prior permissio
 governed by their own terms. Installation packages retain their existing trial terms
 and accompanying licenses; this example-code permission does not modify them.
 
-## Provenance and notices
+## Excerpts and notices
 
-The six earlier verbatim TypeScript blocks were selected from the
-`8415Wallet` repository at commit
-`de79227f0b886d86d674a70d67d5608576c8156c`. Each included block identifies its source
-path and line range. [source-excerpts.json](source-excerpts.json) records hashes of those
-exact excerpt bytes. The code blocks are unchanged; their dependencies and surrounding
-implementation are intentionally omitted. They are not standalone source files.
+The eight selected TypeScript blocks are preserved unchanged. Their public
+excerpt identifiers and byte hashes are listed in
+[source-excerpts.json](source-excerpts.json). Dependencies and surrounding
+implementation are intentionally omitted; these are not standalone executables.
 
-Two additional verbatim blocks in [commitment-history.excerpts.md](commitment-history.excerpts.md)
-were selected on 2026-10-19 from `src/wallet/history.ts` at commit
-`d4a20a140aaa0671ea2a8b1413180606e9f91ec7`. Their source line ranges, full
-source-blob identity and excerpt hashes are recorded with the examples. They are
-not standalone executables and were not added to the offline model test suite.
+The status and reuse tests are adapted local models. The custody decision model
+was written independently for these examples. The three models remain separate
+from the selected TypeScript blocks and do not execute those blocks.
 
-The status and reuse test files are explicitly adapted local models. The custody decision
-model was independently written for this example set and is not a port of a wallet
-contract. Those three models and their original explanations were prepared on 2026-10-11.
-
-The source notice accompanying the copied TypeScript portions is preserved in
-[SOURCE-LICENSE.txt](notices/SOURCE-LICENSE.txt). The selected TypeScript
-files have no file-level SPDX notices. Their inclusion does not assert a blanket
-open-source grant. The additional non-commercial permission above applies only within
-its stated scope; the source attribution and any valid independent rights are preserved.
+Retain the accompanying [license notice](notices/SOURCE-LICENSE.txt).
+The scoped non-commercial permission above and applicable independent and
+third-party rights remain unchanged.

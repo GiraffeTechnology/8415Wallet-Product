@@ -1,8 +1,8 @@
 # Bounded cross-token reuse observations
 
-The following fenced blocks are verbatim excerpts from private source commit `de79227f0b886d86d674a70d67d5608576c8156c`. They show the source work budgets, enumeration and indexing only; they do not form a complete scanner. The adjacent Node file is a local-data adaptation.
+The following blocks are selected implementation excerpts. They show the source work budgets, enumeration and indexing only; they do not form a complete scanner. The adjacent Node file is a local-data adaptation.
 
-### Exact excerpt: src/wallet/collisions.ts, lines 54–56
+### Selected excerpt
 
 ```typescript
 /** Work limits for one interactive scan, not protocol or chain-lifetime limits. */
@@ -10,7 +10,7 @@ export const COLLISION_SCAN_MAX_TOKENS = 32;
 export const COLLISION_SCAN_MAX_ENTRIES = 2048;
 ```
 
-### Exact excerpt: src/wallet/collisions.ts, lines 112–127
+### Selected excerpt
 
 ```typescript
   for (const tokenId of tokens) {
@@ -31,7 +31,7 @@ export const COLLISION_SCAN_MAX_ENTRIES = 2048;
   }
 ```
 
-### Exact excerpt: src/wallet/collisions.ts, lines 142–150
+### Selected excerpt
 
 ```typescript
 function record(

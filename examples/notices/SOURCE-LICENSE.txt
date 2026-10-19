@@ -1,7 +1,6 @@
 PROPRIETARY SOFTWARE NOTICE AND LICENSE TERMS
 
 Project: 8415wallet
-Repository: https://github.com/GiraffeTechnology/8415Wallet
 Licensing notice issued in 2026. Copyright remains with the respective
 copyright holders identified in source notices and project records.
 All rights reserved, subject to the exceptions stated below.
@@ -57,9 +56,9 @@ Rights Holder subject to this notice must meet all of the following conditions:
 
 (a) Preserve the applicable copyright notices and a complete copy of this
     notice with every copy or substantial portion of the Covered Material.
-(b) Identify the original project name, the canonical repository URL above,
-    and the source release, tag, or full commit identifier from which the
-    Covered Material was obtained.
+(b) Identify the project name and the public example identifier accompanying
+    the Covered Material. Private repository locations, source paths and
+    private source revision identifiers are not required attribution.
 (c) Clearly identify modified files and state that modifications were made,
     by whom, and when. Do not misrepresent modified material as the original.
 (d) Include the attribution and notices in a readily accessible notices file

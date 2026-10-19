@@ -4,12 +4,7 @@ These two verbatim TypeScript excerpts show a pure local check used by the
 8415Wallet history view. They compare adjacent admitted entries without reading
 a network, signing, transferring assets, or changing an entry.
 
-Source: `8415Wallet`, commit
-`d4a20a140aaa0671ea2a8b1413180606e9f91ec7`, file `src/wallet/history.ts`,
-Git blob `9509b3b009696d1dc46c493d0d02eecec411a094`.
-
-The complete selected code appears below; access to the source repository is not
-needed to read it. These are source excerpts, not a standalone executable or an
+The complete selected code appears below. These are source excerpts, not a standalone executable or an
 installation package. Imports, the surrounding reader and the `RegisterEntry`
 type are omitted. No test execution is claimed for these excerpts.
 
@@ -28,7 +23,7 @@ type are omitted. No test execution is claimed for these excerpts.
 
 ## Report a fault without rewriting history
 
-### `src/wallet/history.ts`, lines 22–29
+### Selected excerpt
 
 ```typescript
 /** Why a link in the commitment chain does not hold. */
@@ -41,7 +36,7 @@ export type LinkFault =
   | 'latest-entry-has-closed-interval';
 ```
 
-### `src/wallet/history.ts`, lines 113–147
+### Selected excerpt
 
 ```typescript
 function checkLink(
@@ -93,7 +88,7 @@ uniqueness, holder identity, historical finality, or legal title. Holder resolut
 and `isFinalAsOf` remain separate contract answers. No RPC snapshot, contract proof,
 transaction authorization, or complete conformance validator is provided here.
 
-## Provenance and permission
+## Excerpts and permission
 
 The two code blocks are unchanged selections made on 2026-10-19. Their exact UTF-8
 bytes, including each final newline, are hashed in

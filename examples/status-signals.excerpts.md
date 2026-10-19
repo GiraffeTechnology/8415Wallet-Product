@@ -1,8 +1,8 @@
 # Separate status signals
 
-The following fenced blocks are verbatim excerpts from private source commit `de79227f0b886d86d674a70d67d5608576c8156c`. They are incomplete source fragments; omitted imports, types, helpers and surrounding code are required by the original implementation. The adjacent Node file is a separately adapted model, not these functions under test.
+The following blocks are selected implementation excerpts. They are incomplete source fragments; omitted imports, types, helpers and surrounding code are required by the original implementation. The adjacent Node file is a separately adapted model, not these functions under test.
 
-### Exact excerpt: src/wallet/assetView.ts, lines 201–212
+### Selected excerpt
 
 ```typescript
   const observedAt = await reader.chainInstant();
@@ -19,7 +19,7 @@ The following fenced blocks are verbatim excerpts from private source commit `de
   const presentFinal = await reader.isFinalAsOf(tokenId, observedAt);
 ```
 
-### Exact excerpt: src/wallet/assetView.ts, lines 219–240
+### Selected excerpt
 
 ```typescript
     tradeablePosition: { owner, disclosure: DISCLOSURE_POSITION },
@@ -46,7 +46,7 @@ The following fenced blocks are verbatim excerpts from private source commit `de
     gap: await buildGapView(reader, tokenId, conformance, observedAt),
 ```
 
-### Exact excerpt: src/wallet/freshness.ts, lines 66–71
+### Selected excerpt
 
 ```typescript
 const DISPLAY_BY_STATUS: Record<Freshness, FreshnessDisplay> = {
